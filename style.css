@@ -5,11 +5,86 @@
 
 body{
     background: #eee;
+    color: #333;
 }
 
 .wrapper{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+/*    margin: 0 auto;*/
 }
 
+/*.flex-container{*/
+/*    display: flex;   every direct descendant is a flex item */
+/*    background: white; */
+/*    flex-wrap: wrap;*/
+/*    flex-wrap: wrap-reverse;*/ /* Go up instead of down */
+/*    flex-flow: column;*/
+/*    justify-content: flex-start;*/
+/*    height: 600px;*/
+/*    justify-content: center;*/
+/*    align-items: flex-end;*/
+/*    justify-content: center;*/
+/*    justify-content: flex-start;*/
+/*    align-items:center;*/
+/*}*/
+
+/*
+.flex-container:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
+
+/*.box{*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    min-width: 300px;*/
+/*    min-width: 100px;*/
+/*    float: left;*/
+/*    flex-grow: 1;*/
+/*    flex-basis: 500px;*/
+/*    flex-grow: 1;*/
+/*    min-width: 600px;*/
+/*    flex: 0 0 100px  grow shrink basis */
+/*}*/
+
+/*.one{*/
+/*    background: red;*/
+/*    flex-grow: 1;*/
+/*    flex-shrink: 1;*/
+/*    flex-basis: 100px;*/
+/*}*/
+
+/*.two{*/
+/*    background: blue;*/
+/*    flex-grow: 3;*/
+/*    flex-shrink: 3;*/
+/*    flex-basis: 200px;*/
+/*}*/
+
+/*.three{*/
+/*    background: green;*/
+/*    flex-grow: 2;*/
+/*    flex-shrink: 2;*/
+/*    flex-basis: 300px;*/
+/*}*/
+
+#blocks{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
+}
+
+.one{order: 3;}
+.two{order: 2;}
+.three{order: 1;}
+.four{order: 0;}
